@@ -1,0 +1,40 @@
+#!/usr/local/bin/fontforge
+
+name = "UnnamedFukidashi"
+file = name + ".ttf"
+locale = 0x409
+gothic = "takao-fonts-ttf/TakaoPGothic.ttf"
+mincho = "takao-fonts-ttf/TakaoPMincho.ttf"
+
+Open(gothic)
+Select(0U0021, 0U007E)
+Copy()
+New()
+Select(0U0021, 0U007E)
+Paste()
+SetTTFName(locale, 0, "(C) 2011 Tomohiko Sumi")
+SetTTFName(locale, 1, name)
+SetTTFName(locale, 2, "Regular")
+SetTTFName(locale, 3, name)
+SetTTFName(locale, 4, name)
+SetTTFName(locale, 5, "1.0.0")
+SetTTFName(locale, 6, name)
+Generate(file)
+
+Open(gothic)
+Select(0U4E00, 0U9FA5)
+Copy()
+Open(file)
+Select(0U4E00, 0U9FA5)
+Paste()
+Generate(file)
+
+Open(mincho)
+Select(0U3000, 0U30FE)
+Copy()
+Open(file)
+Select(0U3000, 0U30FE)
+Paste()
+Generate(file)
+
+# vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
