@@ -1,0 +1,22 @@
+
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+div#contents {
+  padding: 10px;
+}
+
+/**
+ * vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
+ */
