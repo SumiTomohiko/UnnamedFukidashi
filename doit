@@ -17,7 +17,7 @@ SetTTFName(locale, 1, name)
 SetTTFName(locale, 2, "Regular")
 SetTTFName(locale, 3, name)
 SetTTFName(locale, 4, name)
-SetTTFName(locale, 5, "1.0.0")
+SetTTFName(locale, 5, "1.1.0")
 SetTTFName(locale, 6, name)
 Generate(file)
 
