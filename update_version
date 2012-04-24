@@ -8,5 +8,6 @@ do
   sed -e "s/[0-9][0-9]*\\.[0-9][0-9]*\\.[0-9][0-9]*/${ver}/g" < ${name} > ${tmp}
   mv ${tmp} ${name}
 done
+chmod 755 doit
 
 # vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
