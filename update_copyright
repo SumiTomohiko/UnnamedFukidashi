@@ -1,0 +1,15 @@
+#!/bin/sh
+
+copyright="2011-2012"
+digit="[0-9]"
+digit4="${digit}${digit}${digit}${digit}"
+tmp="tmp"
+
+for name in COPYING doit
+do
+  sed -e "s/${digit4}-${digit4}/${copyright}/g" < "${name}" > "${tmp}"
+  mv "${tmp}" "${name}"
+done
+chmod 755 doit
+
+# vim: tabstop=2 shiftwidth=2 expandtab softtabstop=2
