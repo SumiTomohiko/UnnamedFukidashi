@@ -2,8 +2,8 @@
 NAME = UnnamedFukidashi
 PKG = $(NAME).ttf
 SRC = doit
-DIST = $(PKG) COPYING Makefile README UnnamedFukidashi.ttf doc doit \
-       takao-fonts-ttf update_version
+DIST = $(PKG) ChangeLog COPYING Makefile README UnnamedFukidashi.ttf doc doit \
+       takao-fonts-ttf update_copyright update_version
 VERSION = 1.1.0
 DIST_DIR = $(NAME)-$(VERSION)
 
