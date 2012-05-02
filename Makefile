@@ -26,4 +26,9 @@ dist:
 	tar cf - $(DIST_DIR) | xz --compress > $(DIST_DIR).tar.xz
 	rm -rf $(DIST_DIR)
 
+doc:
+	cd doc && $(MAKE)
+
+.PHONY: doc
+
 # vim: tabstop=8 shiftwidth=8 noexpandtab
