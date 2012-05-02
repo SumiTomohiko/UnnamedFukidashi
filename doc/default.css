@@ -6,6 +6,7 @@ body {
 header {
   background-color: black;
   color: white;
+  font-weight: bold;
 }
 
 header a:link, header a:visited {
@@ -15,6 +16,10 @@ header a:link, header a:visited {
 
 div#contents {
   padding: 10px;
+}
+
+figure {
+  text-align: center;
 }
 
 /**
